@@ -91,7 +91,7 @@ h2 {
 }
 
 #lista-tarefas-container { 
-    width: 800px; 
+    width: auto; 
     height: auto; 
     margin: 80px auto; 
     padding: 20px;
@@ -117,10 +117,15 @@ footer {
     padding: 25px;
 }
 
+@font-face {
+    font-family: 'DSDIGIT';
+    src: url('font/DS-DIGIT.TTF') format('truetype'); /* Corrigido para 'truetype' */
+}
+
 #relogio-digital {
-    font-family: "Orbitron", system-ui; 
+    font-family: 'DSDIGIT'; 
     text-align: center;
-    font-size: 36px; 
+    font-size: 56px; 
     color: rgb(245, 245, 245); 
     padding: 8px; 
     width: 200px;
@@ -133,6 +138,7 @@ footer {
     align-items: center; 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
 }
+
 #lista-tarefas-container {
     width: 800px; 
     height: auto; 
