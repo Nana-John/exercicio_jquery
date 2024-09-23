@@ -90,11 +90,6 @@ h2 {
     align-items: center;
 }
 
-.concluida {
-    text-decoration: line-through;
-    color: rgb(131, 131, 131);
-}
-
 footer {
     text-align: center;
     font-size: 10px;
@@ -146,8 +141,9 @@ footer {
 }
 
 #lista-tarefas li span {
-    font-size: 14px;
-    color: rgba(73, 68, 76, 0.7);
+    font-size: 16px;
+    color: rgba(26, 26, 26, 0.7);
+
 }
 /* Estilos gerais para os botões */
 #lista-tarefas li button {
@@ -155,40 +151,9 @@ footer {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    margin-left: 0; /* Espaçamento entre os botões e o texto da tarefa */
+    margin-left: 10px; /* Espaçamento entre os botões e o texto da tarefa */
 }
-
-  /* Estilos específicos para o botão "Excluir" */
-#lista-tarefas li .excluir {
-    background-image: url('imagem/lixeira.png'); /* Define a imagem de fundo */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    background-position: right; /* Centraliza a imagem no botão */
-    background-size: contain; /* Ajusta o tamanho da imagem para caber no botão */
-    width: 20px; /* Define a largura do botão para acomodar a imagem */
-    height: 20px; /* Define a altura do botão */
-    color: transparent; /* Esconde o texto do botão, já que usaremos a imagem */
-    margin-right: 500px; /* Adiciona um espaçamento à direita do botão Editar */
-}
-  /* Estilos específicos para o botão "Editar" */
-#lista-tarefas li .editar {
-    background-image: url('imagem/editar.png'); /* Define a imagem de fundo */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    background-position: right; /* Centraliza a imagem no botão */
-    background-size: contain; /* Ajusta o tamanho da imagem para caber no botão */
-    width: 20px; /* Define a largura do botão para acomodar a imagem */
-    height: 20px; /* Define a altura do botão */
-    color: transparent; /* Esconde o texto do botão, já que usaremos a imagem */
-    margin-right: -500px; /* Adiciona um espaçamento à direita do botão Editar */
-
-}
-  /* Estilos para quando o mouse passa sobre os botões (hover) */
-
- #lista-tarefas li button {
-    /* ... outros estilos ... */
-    transition: all 0.2s ease; /* Adiciona uma transição suave para o hover */
-}
-
-#lista-tarefas li button:hover {
-    opacity: 0.8;
-    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+.concluida{
+    text-decoration: line-through;
+    color: rgb(85, 85, 85);
 }
