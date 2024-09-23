@@ -4,8 +4,8 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: rgba(215, 227, 252, 1); 
-    color: rgba(73, 68, 76, 1); 
+    background-color: rgba(215, 227, 252, 1);
+    color: rgba(73, 68, 76, 1);
 }
 
 h1 {
@@ -23,18 +23,18 @@ p {
 }
 
 h2 {
-    font-family:"Pacifico", cursive;
-    font-weight:lighter ;
+    font-family: "Pacifico", cursive;
+    font-weight: lighter;
     font-size: 26px;
-    color:rgba(73, 68, 76, 1); 
+    color: rgba(73, 68, 76, 1);
     text-align: center;
 }
 
 #inicio h1 img {
-    width: 30px; 
+    width: 30px;
     height: auto;
-    vertical-align: middle; 
-    margin-right: 10px; 
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 #inicio {
@@ -51,23 +51,23 @@ h2 {
 
 #form-tarefa input[type="text"] {
     padding: 8px;
-    border: 1px solid rgba(156, 137, 184, 1); 
+    border: 1px solid rgba(156, 137, 184, 1);
     border-radius: 5px;
-    margin: 0 5px; 
+    margin: 0 5px;
     width: 250px;
 }
 
 #form-tarefa input[type="time"] {
     padding: 8px;
-    border: 1px solid rgba(156, 137, 184, 1); 
+    border: 1px solid rgba(156, 137, 184, 1);
     border-radius: 5px;
-    margin: 0 5px; 
+    margin: 0 5px;
     width: 100px;
 }
 
 #form-tarefa button[type="submit"] {
     padding: 8px 12px;
-    background-color: rgba(255, 148, 148, 1); 
+    background-color: rgba(255, 148, 148, 1);
     color: white;
     border: none;
     border-radius: 5px;
@@ -81,83 +81,114 @@ h2 {
 
 #lista-tarefas li {
     padding: 10px;
-    margin-bottom: 8px; 
-    background-color: rgba(255, 246, 189, 1); 
+    margin-bottom: 8px;
+    background-color: rgba(255, 246, 189, 1);
     border-radius: 5px;
     cursor: pointer;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
-
-#lista-tarefas-container { 
-    width: auto; 
-    height: auto; 
-    margin: 80px auto; 
-    padding: 20px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .concluida {
     text-decoration: line-through;
-    color: rgb(11, 14, 11); 
+    color: rgb(131, 131, 131);
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: rgba(156, 137, 184, 1); 
+    font-size: 10px;
+    padding: 12px;
+    background-color: rgba(156, 137, 184, 1);
     color: white;
 }
 
-#relogio { 
+#relogio {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     padding: 25px;
 }
 
 @font-face {
     font-family: 'DSDIGIT';
-    src: url('font/DS-DIGIT.TTF') format('truetype'); /* Corrigido para 'truetype' */
+    src: url('font/DS-DIGIT.TTF') format('truetype');
 }
 
 #relogio-digital {
-    font-family: 'DSDIGIT'; 
+    font-family: 'DSDIGIT', monospace;
     text-align: center;
-    font-size: 56px; 
-    color: rgb(245, 245, 245); 
-    padding: 8px; 
+    font-size: 56px;
+    color: rgb(245, 245, 245);
+    padding: 8px;
     width: 200px;
     height: 60px;
-    border: 2px solid rgb(243, 243, 243); 
-    background-color: rgba(156, 137, 184, 1); 
+    border: 2px solid rgb(243, 243, 243);
+    background-color: rgba(156, 137, 184, 1);
     border-radius: 20px;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #lista-tarefas-container {
-    width: 800px; 
-    height: auto; 
-    margin: 20px auto; 
+    width: 90%; /* Largura responsiva */
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: rgba(255, 246, 189, 1); 
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
-    overflow-y: auto; 
-    max-height: 300px; 
+    background-color: rgba(255, 246, 189, 1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    max-height: 300px; /* Altura máxima com barra de rolagem se necessário */
 }
 
-#lista-tarefas li span { 
+#lista-tarefas li span {
     font-size: 14px;
-    color: rgba(73, 68, 76, 0.7); 
+    color: rgba(73, 68, 76, 0.7);
+}
+/* Estilos gerais para os botões */
+#lista-tarefas li button {
+    padding: 0 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 0; /* Espaçamento entre os botões e o texto da tarefa */
 }
 
-.concluida {
-    text-decoration: line-through;
-    color: rgb(131, 131, 131); 
+  /* Estilos específicos para o botão "Excluir" */
+#lista-tarefas li .excluir {
+    background-image: url('imagem/lixeira.png'); /* Define a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: right; /* Centraliza a imagem no botão */
+    background-size: contain; /* Ajusta o tamanho da imagem para caber no botão */
+    width: 20px; /* Define a largura do botão para acomodar a imagem */
+    height: 20px; /* Define a altura do botão */
+    color: transparent; /* Esconde o texto do botão, já que usaremos a imagem */
+    margin-right: 500px; /* Adiciona um espaçamento à direita do botão Editar */
+}
+  /* Estilos específicos para o botão "Editar" */
+#lista-tarefas li .editar {
+    background-image: url('imagem/editar.png'); /* Define a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: right; /* Centraliza a imagem no botão */
+    background-size: contain; /* Ajusta o tamanho da imagem para caber no botão */
+    width: 20px; /* Define a largura do botão para acomodar a imagem */
+    height: 20px; /* Define a altura do botão */
+    color: transparent; /* Esconde o texto do botão, já que usaremos a imagem */
+    margin-right: -500px; /* Adiciona um espaçamento à direita do botão Editar */
+
+}
+  /* Estilos para quando o mouse passa sobre os botões (hover) */
+
+ #lista-tarefas li button {
+    /* ... outros estilos ... */
+    transition: all 0.2s ease; /* Adiciona uma transição suave para o hover */
+}
+
+#lista-tarefas li button:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
 }
